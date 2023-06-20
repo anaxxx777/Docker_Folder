@@ -46,7 +46,7 @@ docker compose down -v
 ```
 docker compose exec コンテナ名 コンテナで実行したいコマンド
 ```
-#### コンテナ内でシェルの立ち上げ
+#### コンテナ内でシェルの立ち上げ(コンテナ内に入るイメージ)
 ```
 docker compose exec コンテナ名 /bin/bash
 ```
