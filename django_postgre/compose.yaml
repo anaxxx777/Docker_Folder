@@ -7,13 +7,16 @@ services:
       POSTGRES_PASSWORD: testpass
     volumes:
       - db-data:/var/lib/postgresql/data
+      # ボリュームマウント
   web:
     build: .
+    # 同じ階層にあるDockerfileを使う
     depends_on:
       - db
     ports:
       - "8000:8000"
     volumes:
       - ./src:/code
+      # バインドマウント
 volumes:
   db-data:
