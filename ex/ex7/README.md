@@ -19,3 +19,8 @@ docker cp ~/hello.html my_tomcat:/usr/local/tomcat/webapps/hello
 <br>
 ####アクセス例
 http://3.86.191.5:8088/hello/hello.html
+<br>
+####composeなしコンテナ削除
+```
+docker rm -f my_tomcat
+```
