@@ -1,7 +1,7 @@
 services:
   web:
     # Dockerfileをもとにコンテナを作成したい場合はbuild
-    # Dockerfileまでのパスを記述する(今回はymlと同じ階層なので".")
+    # Dockerfileまでのパスを記述する(今回はyamlと同じ階層なので".")
     build: .
     environment:
       # たぶん開発者モード
