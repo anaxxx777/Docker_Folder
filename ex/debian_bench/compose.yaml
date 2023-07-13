@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    tty: true
+    volumes:
+      - ./src:/usr/local/src
